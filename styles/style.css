@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 /* works on banner */
 .top-banner {
     background-color: #161616;
@@ -37,6 +41,21 @@
         text-align: center;
     }
 
+    .second-part {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* tablet responsive */
@@ -47,6 +66,25 @@
         margin: 3vh;
         padding: 4vh;
         text-align: center;
+    }
+
+    .second-part {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .small-continer {
+        display: flex;
+        flex-direction: row;
+        background-color: white !important;
+        border: none !important;
+
+    }
+
+    .blogs {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
@@ -69,6 +107,7 @@
     border: 1px solid;
     border-radius: 7px;
     margin: 5px;
+    text-decoration: none;
 }
 
 .btn-2 {
@@ -101,28 +140,52 @@
     grid-row-gap: 10px;
     margin-top: 0px;
     margin-right: 20px;
+
+}
+
+.blog {
+    border: 1px solid wheat;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .blog-info {
     display: flex;
-}
-
-/* footer part */
-.footer {
-    background-color: black;
-    border: 20px;
-    margin: 0px;
-    border-radius: 5px;
-}
-
-#footer-heading {
-    text-align: center;
-    color: white;
-}
-
-.footer-iteam {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    color: white;
+
+}
+
+
+
+footer {
+    background-color: black;
+    margin-top: 5px;
+    padding: 2em 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.footer-links li {
+    list-style: none;
+    margin: 1em;
+}
+
+.footer-links li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #B9B9B9;
+    letter-spacing: 1px;
 }
